@@ -1,10 +1,236 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Test</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .cv {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fffdf5;
+      display: grid;
+      grid-template-columns: 35% 65%;
+    }
+
+    /* ===== COLONNE GAUCHE ===== */
+    .left {
+      background: #cfe6d6;
+      padding: 40px 30px;
+    }
+
+    .photo {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 20px;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .name h1 {
+      margin: 10px 0 5px;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    .name p {
+      margin: 0;
+      font-size: 13px;
+      text-transform: uppercase;
+      color: #555;
+    }
+
+    .block {
+      margin-bottom: 30px;
+    }
+
+    .block h2 {
+      font-size: 14px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #9fc7b0;
+      padding-bottom: 5px;
+    }
+
+    .block p,
+    .block li {
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    /* ===== COLONNE DROITE ===== */
+    .right {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .section-title {
+      background: #cfe6d6;
+      padding: 8px 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .item {
+      margin-bottom: 15px;
+    }
+
+    .item h3 {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .item span {
+      font-size: 12px;
+      color: #666;
+    }
+
+    .item ul {
+      margin-top: 5px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .cv {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Un super portfolio !</h1>
+
+  <div class="cv">
+
+    <!-- COLONNE GAUCHE -->
+    <aside class="left">
+
+      <div class="photo">
+        <img src="photo.jpg" alt="Photo de profil">
+      </div>
+
+      <div class="name">
+        <h1>MOHAMMED MOULIK</h1>
+        <p>Analyste de systèmes</p>
+      </div>
+
+      <div class="block">
+        <h2>Profil personnel</h2>
+        <p>
+          Analyste de systèmes axé sur les résultats avec une excellente capacité
+          de communication et une compréhension approfondie des chaînes
+          d’approvisionnement.
+        </p>
+      </div>
+
+      <div class="block">
+        <h2>Compétences de base</h2>
+        <ul>
+          <li>Développement de logiciels</li>
+          <li>Documentation de projet</li>
+          <li>Analyse de modèles économiques</li>
+          <li>Résolution de problèmes</li>
+          <li>Concepteur de stratégie</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <h2>Coordonnées</h2>
+        <p>
+          📍 Aubervilliers, France<br>
+          ✉️ bonjour@sitevraimentsuper.fr<br>
+          🔗 LinkedIn : sitevraimentsuper
+        </p>
+      </div>
+
+    </aside>
+
+    <!-- COLONNE DROITE -->
+    <main class="right">
+
+      <div class="section">
+        <div class="section-title">Expérience professionnelle</div>
+
+        <div class="item">
+          <h3>Analyste de systèmes</h3>
+          <span>Numérique et cie — Juin 2018 à aujourd’hui</span>
+          <ul>
+            <li>Analyse des systèmes organisationnels</li>
+            <li>Traduction des besoins métier</li>
+            <li>Formation des utilisateurs</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <h3>Analyste Data principal</h3>
+          <span>La fabrique numérique — 2017 à 2018</span>
+          <ul>
+            <li>Analyse de données</li>
+            <li>Dépannage logiciel</li>
+            <li>Statistiques commerciales</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Parcours universitaire</div>
+
+        <div class="item">
+          <h3>Institut de Montpellier</h3>
+          <span>Diplôme d’études supérieures — 2018</span>
+        </div>
+
+        <div class="item">
+          <h3>Université de Montpellier</h3>
+          <span>Licence en sciences — 2011 à 2015</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Références professionnelles</div>
+
+        <p>
+          Marc Petit – PDG<br>
+          bonjour@sitevraimentsuper.fr
+        </p>
+      </div>
+
+    </main>
+
+  </div>
+
 </body>
 </html>
