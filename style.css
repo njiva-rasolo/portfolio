@@ -6,14 +6,18 @@
 
     body {
       margin: 0;
-      background: #f4f4f4;
+      /*background: #f4f4f4;*/
       color: #333;
+      background-image: url(images/background.png);
+      background-size: cover;
     }
 
     .cv {
       max-width: 1000px;
       margin: 40px auto;
-      background: #fffdf5;
+      padding: 30px;
+      /*background: #fffdf5;*/
+      background: transparent;
       display: grid;
       grid-template-columns: 35% 65%;
     }
@@ -41,18 +45,20 @@
     .name {
       text-align: center;
       margin-bottom: 30px;
+      color: #2e613e;
     }
 
     .name h1 {
-      margin: 10px 0 5px;
-      font-size: 24px;
+      margin: 10px 0 10px;
+      font-size: 20px;
       letter-spacing: 1px;
     }
 
     .name p {
       margin: 0;
       font-size: 13px;
-      text-transform: uppercase;
+      font-weight: bold;
+      /*text-transform: uppercase;*/
       color: #555;
     }
 
@@ -82,6 +88,7 @@
     /* ===== COLONNE DROITE ===== */
     .right {
       padding: 40px;
+      background: #eaefec;
     }
 
     .section {
@@ -95,6 +102,10 @@
       text-transform: uppercase;
       font-size: 14px;
       margin-bottom: 15px;
+      color: #2e613e;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #9fc7b0;
     }
 
     .item {
@@ -104,6 +115,10 @@
     .item h3 {
       margin: 0;
       font-size: 14px;
+      color: #2e613e;
+    }
+    .item h3.bildung-title {
+        font-size: 12px;
     }
 
     .item span {
@@ -113,6 +128,26 @@
 
     .item ul {
       margin-top: 5px;
+      font-size: 12px;
+    }
+
+    .item ul.set-title {
+        list-style-type: disclosure-closed;
+    }
+
+    .item .set-title-child {
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .item ul.set-child li {
+        list-style-type: square;
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .item ul.set-child li:last-child {
+        margin-bottom: 8px;
     }
 
     /* ===== RESPONSIVE ===== */
