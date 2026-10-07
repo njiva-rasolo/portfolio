@@ -1,0 +1,259 @@
+<style>
+  .cv-header {
+    display: flex;
+    flex-wrap: wrap;
+    background: #eaf4fb;
+    color: #1f3b57;
+    font-family: "Segoe UI", sans-serif;
+    height: 100%;
+    max-height: 100vh;
+    box-sizing: border-box;
+  }
+
+  .cv-left {
+    background: #d6ebf8;
+    flex: 1 1 220px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .cv-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #b5d9f2;
+    margin: 0 auto 16px;
+  }
+
+  .cv-photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cv-details {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .cv-details span {
+    display: block;
+  }
+
+  .cv-right {
+    flex: 2 1 400px;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+
+  .cv-name {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .cv-title {
+    font-size: 1.2rem;
+    color: #3b7cb3;
+    margin-bottom: 12px;
+  }
+
+  .cv-description {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+
+  .cv-section {
+    margin-bottom: 14px;
+  }
+
+  .cv-section-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+    color: #2f5f8f;
+  }
+
+  .cv-list {
+    font-size: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  @media (max-width: 768px) {
+    .cv-header {
+      height: auto;
+    }
+    .cv-right {
+      padding: 24px;
+    }
+  }
+
+  /* Des styles dans le contenu*/
+
+  /*.skills-box {
+    max-width: 320px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }*/
+
+  /*.skills-box h3 {
+    color: #66b8c4;
+    margin: 16px 0 8px;
+    font-size: 18px;
+  }*/
+
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  .dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #dfeff2;
+  }
+
+  .dot.active {
+    background-color: #66b8c4;
+  }
+
+</style>
+
+<div class="cv-header">
+  <div class="cv-left">
+    <div class="cv-photo">
+      <img src="profil_transparent.png" alt="Description de l'image">
+    </div>
+    <div class="cv-name">Njiva Rasolo</div>
+    <div class="cv-title">Web-Entwicklerin</div>
+    <div class="cv-details">
+      <span><strong>Email :</strong> profi.harimina@gmail.com</span>
+      <span><strong>Tél :</strong> +49 162 1234567</span>
+      <span><strong>Adresse :</strong> Augsburg, Allemagne</span>
+    </div>
+  </div>
+
+  <div class="cv-right">
+    <div class="cv-description">
+      Brève description professionnelle mettant en avant l’expérience,
+      les objectifs et la valeur ajoutée du profil.
+    </div>
+
+    <!--<div class="cv-section">
+      <div class="cv-section-title">Langues</div>
+      <div class="cv-list">
+        <span>Madagassisch – Muttersprache</span>
+        <span>Französich – Fließend sprechen</span>
+        <span>Englisch – Level B1</span>
+        <span>Deutsch – Level B2</span>
+      </div>
+    </div>-->
+
+    <div class="cv-section">
+      <div class="cv-section-title">Soft Skills</div>
+      <div class="cv-list">
+        <span>Teamgeist</span>
+        <span>Kooperation</span>
+        <span>Zuverlässigkeit</span>
+        <span>Anpassungsfähigkeit</span>
+      </div>
+    </div>
+    
+    <!--<div class="skills-box">
+      <h3>Compétences</h3>-->
+    <div class="cv-section">
+      <div class="cv-section-title">Compétences</div>
+
+      <div class="skill">
+        <span>Microsoft Office</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Sage Coala</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Production sociale</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+        </div>
+      </div>
+
+      <div class="cv-section-title">Langues</div>
+
+      <div class="skill">
+        <span>Madagassisch</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Französich</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Deutsch</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <span>Englisch</span>
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot active"></span>
+          <span class="dot "></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

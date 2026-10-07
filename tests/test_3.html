@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Carrousel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style_3.css">
+</head>
+<body>
+
+    <!-- Décor gauche -->
+  <div class="side-deco side-left">
+    <img src="tulipe2.png" alt="">
+  </div>
+
+  <!-- Décor droite -->
+  <div class="side-deco side-right">
+    <img src="bureau1.png" alt="">
+  </div>
+
+  <!-- Conteneur principal -->
+  <main class="carousel-wrapper">
+
+    <!-- Carrousel -->
+    <section class="carousel-container">
+      <div class="carousel-track" id="track">
+
+        <article class="slide">
+          <div class="a4" id="zone1">
+            Page 1
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="a4" id="zone2">
+            Page 2
+          </div>
+        </article>
+
+        <article class="slide">
+          <div class="a4" id="zone3">
+            Page 3
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="carousel-nav">
+      <button onclick="prevSlide()" style="margin-left: 10%;">←</button>
+      <button onclick="nextSlide()" style="margin-right: 10%;">→</button>
+    </nav>
+
+  </main>
+
+  <!-- JS -->
+  <script src="script_3.js"></script>
+</body>
+</html>
